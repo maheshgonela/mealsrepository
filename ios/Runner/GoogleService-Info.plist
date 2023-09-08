@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>653463727303-54rg7dlcu7k4u2courdsfpnoj1oikb0d.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.653463727303-54rg7dlcu7k4u2courdsfpnoj1oikb0d</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDZ_WLmJuNJ2aqtu34C17er4pmP4Quf6w0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>653463727303</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.lunchApp</string>
+	<key>PROJECT_ID</key>
+	<string>lunchapp-9eb9c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lunchapp-9eb9c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:653463727303:ios:abd263fdfae2ead624e2e2</string>
+</dict>
+</plist>

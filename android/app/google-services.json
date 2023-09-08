@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "653463727303",
+    "project_id": "lunchapp-9eb9c",
+    "storage_bucket": "lunchapp-9eb9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653463727303:android:9e9f92ca56cac75724e2e2",
+        "android_client_info": {
+          "package_name": "com.example.lunch_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653463727303-ulap52a41df94f1rhveg145b14rgn19h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCepgJuRhf3QAtKg38HulLL9_t3maNo2_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "653463727303-ulap52a41df94f1rhveg145b14rgn19h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653463727303:android:925bc5ce0db6685f24e2e2",
+        "android_client_info": {
+          "package_name": "in.easycloud.mealmaven"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653463727303-ulap52a41df94f1rhveg145b14rgn19h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCepgJuRhf3QAtKg38HulLL9_t3maNo2_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "653463727303-ulap52a41df94f1rhveg145b14rgn19h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
