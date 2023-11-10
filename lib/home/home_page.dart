@@ -156,7 +156,6 @@ class _HomePageState extends State<HomePage> {
     fortotalegg();
     fetchtotalguestcount();
     deleteDuplicates();
-    //day_to_auto_add(meal_quantity, totaleggcount);
     ToastContext().init(context);
     timer = Timer.periodic(
       Duration(seconds: 5),

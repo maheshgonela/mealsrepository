@@ -2,6 +2,8 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:lunch_app/resources/add_data.dart';
@@ -47,15 +49,13 @@ class _EditProfilePageState extends State<EditProfilePage> {
                 CircleAvatar(
                   radius: 60,
                   backgroundColor: Colors.grey,
-                  backgroundImage: _image != null
-                      ? MemoryImage(_image!)
-                      : null,
+                  backgroundImage: _image != null ? MemoryImage(_image!) : null,
                 ),
                 Container(
                   padding: EdgeInsets.all(4),
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.black, 
+                    color: Colors.black,
                   ),
                   child: GestureDetector(
                     onTap: () {
@@ -96,14 +96,24 @@ class _EditProfilePageState extends State<EditProfilePage> {
   }
 
   void saveChanges() async {
-    final String newName = _nameController.text;
-   
+    //final String newName = _nameController.text;
 
     String resp = await StoreData().saveData(
       file: _image!,
       email: widget.user!.email!,
     );
+    final storageReference = FirebaseStorage.instance.ref();
+    final profileRef = storageReference.child(
+        '${FirebaseAuth.instance.currentUser?.uid}/userprofile/imageurl.jpeg');
+    profileRef.putFile(File.fromRawPath(_image!)).snapshotEvents.listen(
+      (event) async {
+        if (event.state == TaskState.success) {
+          final profileUrl =
+              await profileRef.getDownloadURL().then((value) => value);
+          print('printing the profile${profileUrl}');
+        }
+      },
+    );
     print("saving the changes $resp");
-   
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:lunch_app/home/home_page.dart';
 import 'package:lunch_app/login/login_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -26,22 +27,11 @@ class _LunchAppState extends State<LunchApp> {
       debugShowCheckedModeBanner: false,
       title: 'MealMaven',
       // ignore: deprecated_member_use
-      theme: ThemeData(),
+      theme:
+      //  ThemeData(),
 
-      // ThemeData(
-      //   primarySwatch: Colors.deepPurple,
-      //   textTheme: TextTheme(
-      //
-      //     bodyMedium: GoogleFonts.lato(
-      //
-      //       wordSpacing: 3,
-      //       letterSpacing: 1.5,
-      //       color: Colors.black,
-      //       fontWeight: FontWeight.w800,
-      //     ),
-      //   ),
-      //),
-      // ThemeData(useMaterial3: true),
+   
+    ThemeData(useMaterial3: true),
 
       home: StreamBuilder<User?>(
         stream: authStateChanges,

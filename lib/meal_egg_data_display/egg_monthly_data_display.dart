@@ -89,7 +89,7 @@ class _Egg_monthly_data_displayState extends State<Egg_monthly_data_display> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Egg Count'),
-        backgroundColor: Colors.black87,
+        backgroundColor: Colors.grey,
       ),
       body: isLoading
           ? Center(

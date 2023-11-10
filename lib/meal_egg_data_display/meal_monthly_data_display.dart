@@ -108,7 +108,7 @@ class _Meal_monthly_data_displayState extends State<Meal_monthly_data_display> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Meal quantity'),
-        backgroundColor: Colors.black87,
+        backgroundColor: Colors.grey,
       ),
       body: isLoading
           ? Center(

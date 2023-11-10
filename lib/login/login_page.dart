@@ -134,6 +134,7 @@ class _LoginPage extends State<LoginPage> {
                           email: _editingController.text,
                           password: _passwordController.text,
                         );
+                        print(credential.user);
                       } on FirebaseAuthException {
                         setState(() {
                           _isLoading = false;

@@ -186,7 +186,8 @@ class _ExpensiveWidgetState extends State<ExpensiveWidget> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+      //  backgroundColor: Colors.,
+      backgroundColor: Colors.grey,
         title: Text("Expenses Tracker"),
         actions: [
           IconButton(
@@ -213,19 +214,20 @@ class _ExpensiveWidgetState extends State<ExpensiveWidget> {
             ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
-          height: 60,
+          height: 58,
           color: Color.fromARGB(255, 2, 1, 0),
           child: Column(children: [
             Container(
-              height: 56,
+              height: 54,
               child: Card(
-                margin: EdgeInsets.only(left: 10, right: 10),
+                margin: EdgeInsets.only(left: 8, right: 0),
                 color: Color.fromARGB(221, 232, 224, 224),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                 // mainAxisAlignment: MainAxisAlignment.center,
+                 crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.all(9.0),
+                      padding: const EdgeInsets.all(8.0),
                       child: Text(
                         'Total Expenses ==> ${totalExpense} ',
                         
